@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seni Mempertahankan Diri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="overlay">
+            <div>
+                <h1>Ceramah Seni Mempertahankan Diri</h1>
+                <p>Ceramah berbayar ini bertujuan untuk keselamatan diri dan teknik asas seni mempertahankan
+                    diri,serta menyediakan sistem pendaftaran peserta</p>
+                <p>MPU50081-Seni Tradisional</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Penceramah</h2>
+        <div class="speaker">
+            <img src="gambar.jpeg" alt="Pensyarah">
+            <div>
+                <p><strong>Nama:</strong> En. Amerul Affendy bin Zainal </p>
+                <p><strong>Kepakaran:</strong> Seni Pecak Silat </p>
+                <p><strong>Pengalaman:</strong> 20 Tahun</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Maklumat Ceramah</h2>
+        <p><strong>Tarikh:</strong> 3 Januari 2026</p>
+        <p><strong>Masa:</strong> 8:00 pagi - 12:00 tengah hari</p>
+        <p><strong>Lokasi:</strong> Dewan Harum Manis, PTSS</p>
+        <p><strong>Yuran:</strong> RM50.00 / slot</p>
+        <p><strong>Hubungi:</strong> info@ptss.edu.my</p>
+    </section>
+
+    <section id="borang">
+        <h2>Borang Pendaftaran</h2>
+
+        <form id="registrationForm">
+            <label>Nama Penuh</label>
+            <input type="text" id="name" required>
+
+            <label>Alamat E-mel</label>
+            <input type="email" id="email" required>
+
+            <label>Nombor Telefon</label>
+            <input type="text" id="phone" required>
+
+            <label>Kategori Peserta</label>
+            <select id="category" required>
+                <option value="">-- Pilih --</option>
+                <option>Pelajar</option>
+                <option>Pensyarah</option>
+                <option>Orang Awam</option>
+                <option>Korporat</option>
+            </select>
+
+            <label>Bilangan Slot</label>
+            <input type="number" id="slot" min="1" required>
+
+            <label>Bukti Pembayaran</label>
+            <input type="file" required>
+
+            <button type="submit">Hantar</button>
+        </form>
+
+        <h4>Hubungi En. Khairuddin (Penganjur)</h4>
+        <p>Telefon: 013-57895415</p>
+    </section>
+
+    <div class="confirmation" id="confirmationBox"></div>
+
+    <footer>
+         2026 MPU50081-Seni Tradisional
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
