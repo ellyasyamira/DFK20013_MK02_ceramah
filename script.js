@@ -10,11 +10,9 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     const price = 300;
     const total = price * slot;
 
-    // Papar box pengesahan
     const box = document.getElementById("confirmationBox");
     box.style.display = "block";
 
-    // Masukkan data ke dalam table
     const tableBody = document.getElementById("confirmationTableBody");
     const newRow = tableBody.insertRow();
 
@@ -29,6 +27,5 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     newRow.insertCell(6).textContent = total.toFixed(2);
     newRow.insertCell(7).textContent = "Diterima";
 
-    // Reset borang
     document.getElementById("registrationForm").reset();
 });
