@@ -1,88 +1,87 @@
 body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: cadetblue;
-    }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffe4e1;
+  color: black;
+}
 
-    .hero {
-      background: url("gambar.jpeg") center/cover no-repeat;
-      height: 100vh;
-      position: relative;
-    }
+.overlay {
+  background: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
 
-    .overlay {
-      background: rgba(0,0,0,0.6);
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: rgb(255, 255, 255);
-      padding: 20px;
-    }
+.overlay h1 {
+  font-size: 2.5rem;
+}
 
-    .overlay h1 {
-      font-size: 2.5rem;
-    }
+.overlay p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
 
-    .overlay p {
-      font-size: 1.2rem;
-      margin: 10px 0;
-    }
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ffb6c1;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
 
-    .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #27ae60;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      }
+section {
+  max-width: 900px;
+  background: #ffffff;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 8px;
+  color: black;
+}
 
-    section {
-      max-width: 900px;
-      background: rgb(247, 247, 247);
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 8px;
-    }
+.speaker {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
-    .speaker {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
+.speaker img {
+  width: 150px;
+  border-radius: 10px;
+}
 
-    .speaker img {
-      width: 150px;
-      border-radius: 10px;
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 15px;
-    }
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: black;
+}
 
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-    }
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  color: black;
+}
 
-    button {
-      margin-top: 20px;
-      padding: 12px;
-      width: 100%;
-      background: #2980b9;
-      color: white;
-      border: none;
-      cursor: pointer;
-       }
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #ffb6c1;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
 
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+footer {
+  background: #ffc0cb;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}

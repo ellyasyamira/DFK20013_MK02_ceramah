@@ -5,20 +5,19 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const category = document.getElementById("category").value;
-    const slot = document.getElementById("slot").value;
+    const slot = parseInt(document.getElementById("slot").value);
 
-    const price = 50;
+    const price = 300;
     const total = price * slot;
 
-    const box = document.getElementById("confirmationBox");
-    box.style.display = "block";
-    box.innerHTML = `
-      <h3>Pengesahan Pendaftaran</h3>
-      <p><strong>Nama:</strong> ${name}</p>
-      <p><strong>E-mel:</strong> ${email}</p>
-      <p><strong>No Telefon:</strong> ${phone}</p>
-      <p><strong>Kategori:</strong> ${category}</p>
-      <p><strong>Bilangan Slot:</strong> ${slot}</p>
-      <p><strong>Jumlah Bayaran:</strong> RM ${total.toFixed(2)}</p>
-    `;
-  });
+    const tableBody = document.querySelector("#registrationTable tbody");
+    const row = tableBody.insertRow();
+    row.insertCell(0).textContent = name;
+    row.insertCell(1).textContent = email;
+    row.insertCell(2).textContent = phone;
+    row.insertCell(3).textContent = category;
+    row.insertCell(4).textContent = slot;
+    row.insertCell(5).textContent = `RM ${total.toFixed(2)}`;
+
+    document.getElementById("registrationForm").reset();
+});
