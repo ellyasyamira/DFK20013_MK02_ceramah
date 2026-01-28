@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asas Keselamatan Siber untuk Generasi IT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="overlay">
+      <div>
+        <h1>Ceramah Asas Keselamatan Siber untuk Generasi IT</h1>
+        <p>
+          Ceramah berbayar ini bertujuan untuk menjaga keselamatan data dari ancaman siber serta memberi
+          asas penting untuk pelajar dan profesional IT, serta menyediakan sistem pendaftaran peserta.
+        </p>
+        <p>DFC20313 Cybersecurity Fundamentals</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Penceramah</h2>
+    <div class="speaker">
+      <img src="gambar1.jpg" alt="Pensyarah">
+      <div>
+        <p><strong>Nama:</strong> Pn. Hawariyah</p>
+        <p><strong>Kepakaran:</strong> Cybersecurity</p>
+        <p><strong>Pengalaman:</strong> 20 Tahun</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Maklumat Ceramah</h2>
+    <p><strong>Tarikh:</strong> 3 Januari 2026</p>
+    <p><strong>Masa:</strong> 8:00 pagi - 12:00 tengah hari</p>
+    <p><strong>Lokasi:</strong> Dewan Harum Manis, PTSS</p>
+    <p><strong>Yuran:</strong> RM300.00 / slot</p>
+    <p><strong>Hubungi:</strong> info@ptss.edu.my</p>
+  </section>
+
+  <section id="borang">
+    <h2>Borang Pendaftaran</h2>
+
+    <form id="registrationForm">
+      <label>Nama Penuh</label>
+      <input type="text" id="name" required>
+
+      <label>Alamat E-mel</label>
+      <input type="email" id="email" required>
+
+      <label>Nombor Telefon</label>
+      <input type="text" id="phone" required>
+
+      <label>Kategori Peserta</label>
+      <select id="category" required>
+        <option value="">-- Pilih --</option>
+        <option>Pelajar</option>
+        <option>Pensyarah</option>
+        <option>Orang Awam</option>
+        <option>Korporat</option>
+      </select>
+
+      <label>Bilangan Slot</label>
+      <input type="number" id="slot" min="1" required>
+
+      <label>Bukti Pembayaran</label>
+      <input type="file" required>
+
+      <button type="submit">Hantar</button>
+    </form>
+
+    <h4>Hubungi En. Khairuddin (Penganjur)</h4>
+    <p>Telefon: 013-57895415</p>
+  </section>
+
+  <div class="confirmation" id="confirmationBox" style="display:none;">
+    <h2>Pengesahan Pendaftaran</h2>
+
+    <table width="100%" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>E-mel</th>
+          <th>No Telefon</th>
+          <th>Kategori</th>
+          <th>Slot</th>
+          <th>Jumlah (RM)</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="confirmationTableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    2026 DFC20313 Cybersecurity Fundamentals
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
